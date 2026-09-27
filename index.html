@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Guía interactiva e informativa de la E.E.T.P. N°612 Eudocio de los Santos Giménez de Coronda, Santa Fe: historia, tecnicaturas, talleres, ingreso, proyectos, ubicación y recursos.">
+<meta name="theme-color" content="#071521">
+<meta property="og:title" content="E.E.T.P. 612 | Coronda, Santa Fe">
+<meta property="og:description" content="Conocé la historia, tecnicaturas, talleres, proyectos, ingreso y vida escolar de la E.E.T.P. 612.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.eetp612.com.ar/assets/img/E.E.T.P.612.png">
+<title>E.E.T.P. 612 | Coronda</title>
+<link rel="icon" href="https://www.eetp612.com.ar/assets/img/E.E.T.P.612.png">
+<style>
+:root{
+  --bg:#071521;--bg2:#0c2030;--card:#102b3d;--card2:#143a52;
+  --green:#62b9d8;--green2:#2d7897;--gold:#e1b83f;--text:#f4f9fc;--muted:#a9bdc8;
+  --line:#28566b;--white:#fff;--shadow:0 20px 55px rgba(0,0,0,.25)
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:
+radial-gradient(circle at 80% 0%,rgba(98,185,216,.13),transparent 30%),var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(1160px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:50;background:rgba(7,21,33,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.navin{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800}
+.logo{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--green),#e1b83f);display:grid;place-items:center;color:#071521;font-weight:950}
+.logo img{width:100%;height:100%;object-fit:contain;padding:3px}.logo{overflow:hidden;background:#fff;border:1px solid #e1b83f}
+.navlinks{display:flex;gap:20px;color:var(--muted);font-size:.92rem}
+.navlinks a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:12px;background:var(--green);color:#071521;font-weight:800;border:0;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.05)}
+.btn.alt{background:transparent;color:var(--text);border:1px solid var(--line)}
+.hero{padding:90px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center}
+.kicker{color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:.13em;font-size:.8rem}
+h1{font-size:clamp(2.7rem,6vw,5.7rem);line-height:.96;letter-spacing:-.06em;margin:14px 0 22px}
+h1 span{color:var(--green)}
+.lead{font-size:1.13rem;color:var(--muted);max-width:690px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.hero-card{background:linear-gradient(145deg,var(--card2),#0a1812);border:1px solid var(--line);border-radius:26px;padding:28px;box-shadow:var(--shadow)}
+.hero-card .big{font-size:4.5rem;font-weight:900;color:var(--green);line-height:1}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
+.stat{padding:16px;background:#0c2230;border:1px solid var(--line);border-radius:15px}
+.stat b{display:block;font-size:1.3rem}.stat small{color:var(--muted)}
+section{padding:80px 0}
+.section-head{max-width:760px;margin-bottom:34px}
+.eyebrow{color:var(--green);font-weight:800;font-size:.78rem;text-transform:uppercase;letter-spacing:.12em}
+h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1.05;margin:8px 0 13px;letter-spacing:-.04em}
+.section-head p{color:var(--muted)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;transition:.2s}
+.card:hover{transform:translateY(-4px);border-color:#3c829d}
+.card h3{font-size:1.25rem;margin:9px 0}
+.card p,.card li{color:var(--muted)}
+.icon{font-size:2rem}
+.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:15px}
+.tag{padding:6px 9px;border-radius:99px;background:#0b2432;border:1px solid var(--line);font-size:.76rem;color:#d9edf5}
+.track{position:relative;overflow:hidden}
+.track::after{content:"";position:absolute;inset:auto -30px -60px auto;width:180px;height:180px;border-radius:50%;background:rgba(98,185,216,.08)}
+.track-head{display:flex;align-items:center;justify-content:space-between;gap:15px}
+.track .number{font-size:3rem;font-weight:900;color:var(--green);line-height:1}
+.details{margin-top:20px;border-top:1px solid var(--line);padding-top:18px}
+.details li{margin:7px 0 0 18px}
+.timeline{border-left:2px solid var(--green2);margin-left:10px;padding-left:28px}
+.event{position:relative;margin:0 0 30px}
+.event::before{content:"";position:absolute;left:-37px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px var(--bg)}
+.year{color:var(--green);font-weight:900}
+.notice{padding:18px 20px;border:1px solid #2d7897;background:#0d2a3b;border-radius:16px;margin-top:20px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.tab{padding:10px 14px;border:1px solid var(--line);background:var(--card);color:var(--muted);border-radius:10px;cursor:pointer}
+.tab.active{background:var(--green);color:#04130b;border-color:var(--green);font-weight:800}
+.tabcontent{display:none}.tabcontent.active{display:block}
+.subjects{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:18px}
+.subject{padding:11px 12px;background:#0b2432;border:1px solid var(--line);border-radius:10px;color:#cfe1d7;font-size:.9rem}
+.faq{border-top:1px solid var(--line)}
+.faq button{width:100%;background:none;border:0;color:var(--text);padding:20px 0;text-align:left;font-size:1rem;font-weight:750;display:flex;justify-content:space-between;cursor:pointer}
+.faq p{display:none;color:var(--muted);padding:0 0 20px;max-width:850px}
+.faq.open p{display:block}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact-card{padding:25px;background:var(--card);border:1px solid var(--line);border-radius:20px}
+.contact-row{display:flex;gap:13px;padding:13px 0;border-bottom:1px solid var(--line)}
+.contact-row:last-child{border-bottom:0}
+footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-size:.9rem}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.7);display:none;align-items:center;justify-content:center;padding:20px;z-index:100}
+.modal.show{display:flex}
+.modal-box{max-width:720px;width:100%;max-height:85vh;overflow:auto;background:#0d2017;border:1px solid var(--line);border-radius:24px;padding:28px;position:relative}
+.close{position:absolute;right:18px;top:14px;background:none;border:0;color:var(--muted);font-size:1.8rem;cursor:pointer}
+.check{color:var(--green);font-weight:900;margin-right:7px}
+@media(max-width:800px){
+ .navlinks{display:none}.hero{padding-top:55px}.hero-grid,.grid2,.contact{grid-template-columns:1fr}
+ .grid3{grid-template-columns:1fr}.subjects{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){.subjects{grid-template-columns:1fr}section{padding:60px 0}.hero-card{padding:22px}}
+
+.photo-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px}.gallery-card{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}.gallery-card img{width:100%;height:250px;object-fit:cover;display:block}.gallery-info{padding:20px}.gallery-info h3{margin:8px 0 8px;font-size:1.2rem}.gallery-info p{color:var(--muted);line-height:1.6;margin:0 0 14px}.gallery-info a{color:var(--accent);font-weight:800;text-decoration:none}.tag{font-size:.72rem;letter-spacing:.12em;font-weight:900;color:var(--accent)}.gallery-placeholder{height:250px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:25px;background:linear-gradient(135deg,rgba(40,170,110,.16),rgba(255,255,255,.03))}.gallery-placeholder span{font-size:3rem;margin-bottom:10px}.gallery-placeholder strong{font-size:1.2rem}.gallery-placeholder small{color:var(--muted);max-width:260px;margin-top:8px;line-height:1.5}.source-note{color:var(--muted);font-size:.85rem;margin-top:18px;text-align:center}@media(max-width:900px){.photo-gallery{grid-template-columns:1fr 1fr}}@media(max-width:600px){.photo-gallery{grid-template-columns:1fr}.gallery-card img,.gallery-placeholder{height:220px}}
+
+.quick-section{padding:0 0 30px}.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.quick-card{display:flex;align-items:center;gap:12px;padding:18px;border:1px solid var(--line);background:rgba(16,43,61,.72);border-radius:18px;transition:.25s}.quick-card:hover{transform:translateY(-3px);border-color:var(--green);background:var(--card2)}.quick-icon{font-size:25px}.quick-card strong{display:block;font-size:14px}.quick-card small{display:block;color:var(--muted);font-size:12px;margin-top:2px}.arrow{margin-left:auto;color:var(--gold);font-size:20px}.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.resource-card{border:1px solid var(--line);border-radius:20px;padding:24px;background:linear-gradient(145deg,rgba(20,58,82,.9),rgba(16,43,61,.78));transition:.25s;position:relative;overflow:hidden}.resource-card:before{content:"";position:absolute;inset:auto -30px -45px auto;width:120px;height:120px;border-radius:50%;background:rgba(225,184,63,.08)}.resource-card:hover{transform:translateY(-4px);border-color:var(--gold);box-shadow:0 15px 35px rgba(0,0,0,.18)}.resource-card>span{font-size:27px}.resource-card h3{margin:10px 0 5px}.resource-card p{color:var(--muted);font-size:14px;min-height:45px}.resource-card b{display:inline-block;margin-top:13px;color:var(--green)}
+@media(max-width:900px){.quick-grid{grid-template-columns:repeat(2,1fr)}.resource-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.quick-grid,.resource-grid{grid-template-columns:1fr}.quick-card{padding:15px}.resource-card{padding:20px}}
+.scroll-progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--green),var(--gold));z-index:100}.back-top{position:fixed;right:20px;bottom:20px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card2);color:var(--white);font-size:20px;cursor:pointer;opacity:0;transform:translateY(10px);pointer-events:none;transition:.25s;z-index:40}.back-top.show{opacity:1;transform:none;pointer-events:auto}.back-top:hover{border-color:var(--gold);color:var(--gold)}/* --- Capa de diseño editorial / institucional --- */
+:root{--bg:#f5f7f8;--bg2:#eaf0f3;--card:#fff;--card2:#fff;--text:#17232d;--muted:#5f6d78;--line:#d8e0e5;--green:#176b86;--accent:#176b86;--gold:#c69a2b;--white:#fff;--shadow:0 10px 30px rgba(22,42,55,.07)}
+html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}.container{max-width:1180px}
+nav{background:rgba(255,255,255,.97)!important;border-bottom:1px solid var(--line)!important;box-shadow:0 2px 12px rgba(20,40,55,.05)!important;backdrop-filter:blur(10px)}.navbrand{color:#163746!important;letter-spacing:-.02em}.navlinks a{color:#42535e!important;font-weight:600!important}.navlinks a:hover{color:var(--green)!important}
+.hero{padding:86px 0 72px;background:linear-gradient(180deg,#fff 0%,#f5f7f8 100%);border-bottom:1px solid var(--line)}.hero-grid{gap:72px}.hero h1{font-size:clamp(2.35rem,5vw,4.4rem)!important;letter-spacing:-.055em!important;line-height:1.03!important;color:#102c3b!important;max-width:760px}.hero p{font-size:1.08rem!important;color:#566671!important;max-width:680px}.hero-card{background:#fff!important;border:1px solid var(--line)!important;border-radius:8px!important;box-shadow:var(--shadow)!important;padding:34px!important}
+section{padding:78px 0}section h2{font-size:clamp(1.8rem,3vw,2.65rem)!important;letter-spacing:-.035em!important;color:#143548!important}.section-intro{color:var(--muted)!important;max-width:720px}.card,.contact-card,.gallery-card,.resource-card,.map-card,.school-photo-card{background:#fff!important;border:1px solid var(--line)!important;border-radius:8px!important;box-shadow:none!important}.card:hover,.gallery-card:hover,.resource-card:hover{transform:none!important;border-color:#aebfc9!important;box-shadow:0 10px 25px rgba(22,42,55,.06)!important}.card h3,.gallery-info h3,.resource-card h3{color:#173a4c!important}.card p,.card li,.gallery-info p,.resource-card p{color:#60707b!important}
+.quick-section{padding:28px 0 34px;background:#fff}.quick-grid{gap:0!important;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}.quick-card{border:0!important;border-right:1px solid var(--line)!important;border-radius:0!important;background:#fff!important;padding:20px 22px!important}.quick-card:last-child{border-right:0!important}.quick-card:hover{transform:none!important;background:#f7fafb!important}.quick-icon{display:none}.arrow{color:var(--green)!important}
+.resource-grid{gap:14px}.resource-card{padding:22px!important}.resource-card:before{display:none!important}.resource-card>span{display:none}.resource-card b{color:var(--green)!important;font-size:.9rem}.photo-gallery{gap:16px}.gallery-card{overflow:hidden}.gallery-card img,.gallery-placeholder{height:230px!important}.gallery-info{padding:18px 20px 21px!important}.tag{color:var(--green)!important;font-size:.68rem!important}.gallery-info a{color:var(--green)!important}.tab{background:#fff!important;color:#52646f!important;border-color:var(--line)!important;border-radius:5px!important}.tab.active{background:var(--green)!important;color:#fff!important;border-color:var(--green)!important}.modal-box{background:#fff!important;border:1px solid var(--line)!important;border-radius:8px!important;color:var(--text)!important}footer{background:#102d3d;color:#d4e0e6!important;border-top:0!important}footer a{color:#fff!important}.back-top{background:#fff!important;color:var(--green)!important;border-color:var(--line)!important}.scroll-progress{height:2px!important;background:var(--green)!important}
+@media(max-width:700px){.hero{padding:58px 0 48px}.hero-grid{gap:34px}section{padding:58px 0}.quick-grid{grid-template-columns:1fr!important}.quick-card{border-right:0!important;border-bottom:1px solid var(--line)!important}.quick-card:last-child{border-bottom:0!important}}
+
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"EducationalOrganization","name":"E.E.T.P. N.º 612 Eudocio de los Santos Giménez","address":{"@type":"PostalAddress","streetAddress":"Juan de Garay e Italia","addressLocality":"Coronda","addressRegion":"Santa Fe","addressCountry":"AR"},"telephone":["0342-4910134","0342-5923900"],"email":"eetp.612coronda@gmail.com","url":"https://www.eetp612.com.ar/"}</script>
+</head>
+<body>
+<nav>
+ <div class="container navin">
+  <a class="brand" href="#inicio"><span class="logo"><img src="https://www.eetp612.com.ar/assets/img/E.E.T.P.612.png" alt="Logo oficial E.E.T.P. 612"></span><span>E.E.T.P. 612</span></a>
+  <div class="navlinks">
+   <a href="#institucion">Institución</a><a href="#carreras">Tecnicaturas</a><a href="#vida">Vida escolar</a><a href="#recursos">Recursos</a><a href="#ingreso">Ingreso</a><a href="#contacto">Contacto</a>
+  </div>
+  <a class="btn" href="#carreras">Explorar</a>
+ </div>
+</nav>
+
+<main id="inicio">
+<section class="hero">
+ <div class="container hero-grid">
+  <div>
+   <div class="kicker">Coronda · Santa Fe</div>
+   <h1>Conocé la <span>612</span>.</h1>
+   <p class="lead">Una guía interactiva para descubrir la E.E.T.P. N°612 “Eudocio de los Santos Giménez”: su historia, sus tecnicaturas, talleres, espacios curriculares, vida estudiantil e información para ingresar.</p>
+   <div class="actions">
+    <a class="btn" href="#carreras">Ver tecnicaturas →</a>
+    <a class="btn alt" href="#institucion">Conocer la historia</a>
+   </div>
+  </div>
+  <div class="hero-card"><div style="display:flex;justify-content:center;margin-bottom:18px"><img src="https://www.eetp612.com.ar/assets/img/E.E.T.P.612.png" alt="Logo oficial E.E.T.P. 612" style="width:110px;height:110px;object-fit:contain"></div>
+   <div class="kicker">Escuela técnica</div>
+   <div class="big">612</div>
+   <p style="color:var(--muted);margin-top:8px">Eudocio de los Santos Giménez</p>
+   <div class="stats">
+    <div class="stat"><b>2</b><small>Tecnicaturas actuales</small></div>
+    <div class="stat"><b>1950</b><small>Año de creación del establecimiento</small></div>
+    <div class="stat"><b>Coronda</b><small>Juan de Garay e Italia</small></div>
+    <div class="stat"><b>2026</b><small>Información de ingreso consultada</small></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="quick-section">
+ <div class="container">
+  <div class="quick-grid">
+   <a class="quick-card" href="#carreras"><span class="quick-icon">🎓</span><div><strong>Elegí tu tecnicatura</strong><small>Conocé los dos recorridos actuales.</small></div><span class="arrow">→</span></a>
+   <a class="quick-card" href="#galeria"><span class="quick-icon">📸</span><div><strong>Mirala por dentro</strong><small>Proyectos, estudiantes y actividades.</small></div><span class="arrow">→</span></a>
+   <a class="quick-card" href="#ingreso"><span class="quick-icon">📝</span><div><strong>Quiero ingresar</strong><small>Requisitos y datos de inscripción.</small></div><span class="arrow">→</span></a>
+   <a class="quick-card" href="#ubicacion"><span class="quick-icon">📍</span><div><strong>Encontrá la escuela</strong><small>Mapa, dirección y contacto.</small></div><span class="arrow">→</span></a>
+  </div>
+ </div>
+</section>
+
+<section id="institucion">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">La institución</div><h2>Una escuela con historia técnica y comercial.</h2>
+  <p>La institución nació de una iniciativa pensada para jóvenes trabajadores y fue transformándose con el tiempo hasta su propuesta técnica actual.</p></div>
+  <div class="grid2">
+   <div class="card">
+    <div class="icon">🏛️</div><h3>Identidad</h3>
+    <p>En 1939 Don Eudocio de los Santos Giménez concibió la creación de una escuela profesional nocturna con orientación comercial. El establecimiento fue creado en mayo de 1950 y en 1956 recibió el nombre de su impulsor.</p>
+   </div>
+   <div class="card">
+    <div class="icon">⚙️</div><h3>Transformación</h3>
+    <p>A lo largo de las décadas incorporó electricidad, administración, electromecánica y otras propuestas. En 1992 egresó la primera promoción de Técnicos Electromecánicos y los talleres se trasladaron al nuevo edificio.</p>
+   </div>
+  </div>
+  <div class="notice"><b>Dato clave:</b> la propuesta actual se organiza alrededor de dos tecnicaturas: <strong>Técnico en Administración y Gestión</strong> y <strong>Técnico en Equipos e Instalaciones Electromecánicas</strong>.</div>
+ </div>
+</section>
+
+<section id="carreras" style="background:var(--bg2)">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Elegí tu recorrido</div><h2>Dos tecnicaturas, dos formas de aprender.</h2>
+  <p>La elección no es simplemente “qué materias me gustan”: cada recorrido desarrolla herramientas y prácticas diferentes.</p></div>
+  <div class="grid2">
+   <article class="card track">
+    <div class="track-head"><div><div class="kicker">Orientación 01</div><h3>Técnico en Equipos e Instalaciones Electromecánicas</h3></div><div class="number">01</div></div>
+    <p>Un recorrido centrado en electricidad, mecánica, automatización, mantenimiento, diseño técnico y resolución de problemas de instalaciones y equipos.</p>
+    <div class="tags"><span class="tag">Electricidad</span><span class="tag">Mecánica</span><span class="tag">Automatización</span><span class="tag">CNC / CAD-CAM</span></div>
+    <div class="details"><b>¿Qué podés desarrollar?</b>
+      <ul><li>Diseño y montaje de equipos e instalaciones.</li><li>Mantenimiento preventivo y correctivo.</li><li>Trabajo con circuitos eléctricos y automatismos.</li><li>Participación en proyectos y emprendimientos industriales.</li></ul>
+    </div>
+    <button class="btn" style="margin-top:20px" onclick="openModal('electro')">Ver recorrido completo</button>
+   </article>
+
+   <article class="card track">
+    <div class="track-head"><div><div class="kicker">Orientación 02</div><h3>Técnico en Administración y Gestión de las Organizaciones</h3></div><div class="number">02</div></div>
+    <p>Un recorrido orientado a la administración de organizaciones, operaciones comerciales y financieras, información, proyectos y planificación.</p>
+    <div class="tags"><span class="tag">Administración</span><span class="tag">Contabilidad</span><span class="tag">Economía</span><span class="tag">Proyectos</span></div>
+    <div class="details"><b>¿Qué podés desarrollar?</b>
+      <ul><li>Organización y control de operaciones.</li><li>Registro y análisis de información.</li><li>Planificación de recursos y proyectos.</li><li>Comunicación, atención al cliente y toma de decisiones dentro de la organización.</li></ul>
+    </div>
+    <button class="btn" style="margin-top:20px" onclick="openModal('admin')">Ver orientación</button>
+   </article>
+  </div>
+  <div class="notice"><b>Importante:</b> “Taller”, “Economía” y “Contabilidad” no son las dos tecnicaturas actuales según la información institucional publicada. Son áreas, materias o espacios que forman parte de distintos recorridos. La web usa las denominaciones oficiales para evitar confusiones.</div>
+ </div>
+</section>
+
+<section id="recorrido">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Qué vas a encontrar</div><h2>Aprender haciendo.</h2>
+  <p>La propuesta combina formación general con espacios técnicos. En el Ciclo Básico aparecen, por ejemplo, talleres de Carpintería, Electricidad y Metalmecánica, además de Informática y Gestión.</p></div>
+  <div class="grid3">
+   <div class="card"><div class="icon">🔧</div><h3>Talleres</h3><p>Espacios prácticos que acercan al estudiante a herramientas, procedimientos y resolución de problemas.</p></div>
+   <div class="card"><div class="icon">📐</div><h3>Dibujo técnico</h3><p>Representación gráfica e interpretación de planos, una base importante para el recorrido electromecánico.</p></div>
+   <div class="card"><div class="icon">💻</div><h3>Informática</h3><p>El Ciclo Básico incluye Taller de Informática y la institución también ofrece recursos digitales para estudiantes.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="planes" style="background:var(--bg2)">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Materias y espacios</div><h2>Explorá por etapa.</h2><p>Seleccioná un año para ver ejemplos de espacios curriculares publicados por la institución.</p></div>
+  <div class="tabs">
+   <button class="tab active" onclick="showTab('basico',this)">Ciclo Básico</button>
+   <button class="tab" onclick="showTab('electro',this)">Electromecánica</button>
+   <button class="tab" onclick="showTab('final',this)">6.º año técnico</button>
+  </div>
+  <div id="basico" class="tabcontent active card">
+   <h3>1.º y 2.º año</h3><p>La base común combina materias generales con espacios prácticos.</p>
+   <div class="subjects"><div class="subject">Matemática</div><div class="subject">Lengua y Literatura</div><div class="subject">Inglés</div><div class="subject">Dibujo Técnico</div><div class="subject">Educación Tecnológica</div><div class="subject">Educación Física</div><div class="subject">Biología</div><div class="subject">Historia / Geografía</div><div class="subject">Taller de Carpintería</div><div class="subject">Taller de Electricidad</div><div class="subject">Taller de Metalmecánica</div><div class="subject">Taller de Informática</div></div>
+  </div>
+  <div id="electro" class="tabcontent card">
+   <h3>3.º a 5.º año · Electromecánica</h3><p>El recorrido incorpora progresivamente electricidad, mecánica, circuitos, materiales, electrónica, automatización y fabricación.</p>
+   <div class="subjects"><div class="subject">Física</div><div class="subject">Química</div><div class="subject">Conocimiento de los materiales</div><div class="subject">Taller de Electricidad</div><div class="subject">Taller de Mecánica</div><div class="subject">Mecánica Técnica</div><div class="subject">Circuitos eléctricos</div><div class="subject">Mediciones Eléctricas</div><div class="subject">Electrónica</div><div class="subject">Organización Industrial</div><div class="subject">Automatización</div><div class="subject">CNC / CAD-CAM</div></div>
+  </div>
+  <div id="final" class="tabcontent card">
+   <h3>6.º año · especialización técnica</h3><p>La propuesta publicada incluye prácticas profesionalizantes y espacios vinculados con instalaciones, mantenimiento, control, automatización y proyectos.</p>
+   <div class="subjects"><div class="subject">Economía</div><div class="subject">Instalaciones Eléctricas</div><div class="subject">Marco Jurídico</div><div class="subject">Prácticas Profesionalizantes</div><div class="subject">Mantenimiento de equipos</div><div class="subject">Sistemas de Control y Automatización Industrial</div><div class="subject">Proyecto y Diseño de Dispositivos Electromecánicos</div><div class="subject">Taller de Montaje Electromecánico</div><div class="subject">Taller de CNC CAD-CAM</div></div>
+  </div>
+ </div>
+</section>
+
+<section id="historia">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">1939 → actualidad</div><h2>Una historia que fue cambiando con la comunidad.</h2></div>
+  <div class="timeline">
+   <div class="event"><div class="year">1939</div><h3>La idea</h3><p>Don Eudocio de los Santos Giménez concibe una escuela profesional nocturna de orientación comercial para jóvenes trabajadores.</p></div>
+   <div class="event"><div class="year">1950</div><h3>Creación</h3><p>Luego de gestiones, se consigue la creación del establecimiento educacional en mayo.</p></div>
+   <div class="event"><div class="year">1956</div><h3>El nombre</h3><p>La institución recibe el nombre de quien impulsó su creación.</p></div>
+   <div class="event"><div class="year">1980–1992</div><h3>Expansión técnica</h3><p>Se incorporan nuevas terminalidades y comienza una etapa de consolidación de la formación eléctrica y electromecánica.</p></div>
+   <div class="event"><div class="year">2000</div><h3>Nuevo edificio</h3><p>Se culmina la obra del edificio propio proyectado para la institución.</p></div>
+   <div class="event"><div class="year">Actualidad</div><h3>Dos tecnicaturas</h3><p>La escuela informa actualmente las tecnicaturas de Administración y Gestión y de Equipos e Instalaciones Electromecánicas.</p></div>
+  </div>
+ </div>
+</section>
+
+
+<section id="ubicacion" class="section">
+  <div class="section-head">
+    <div><span class="eyebrow">UBICACIÓN</span><h2>¿Dónde está la escuela?</h2></div>
+    <p>Conocé la ubicación de la E.E.T.P. 612 y cómo se ve su edificio desde afuera.</p>
+  </div>
+  <div class="location-grid">
+    <div class="map-card">
+      <iframe title="Ubicación E.E.T.P. 612" src="https://www.google.com/maps?q=E.E.T.P.+612+Eudocio+de+los+Santos+Gimenez,+Juan+de+Garay+e+Italia,+Coronda,+Santa+Fe&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="map-actions"><a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=E.E.T.P.%20612%20Eudocio%20de%20los%20Santos%20Gimenez%2C%20Juan%20de%20Garay%20e%20Italia%2C%20Coronda%2C%20Santa%20Fe" target="_blank" rel="noopener">Abrir en Google Maps ↗</a></div>
+    </div>
+    <div class="school-photo-card">
+      <div class="photo-frame"><img src="https://eetp612.com.ar/images/institucional.jpg" alt="Exterior de la E.E.T.P. 612 de Coronda" onerror="this.onerror=null;this.src='https://eetp612.com.ar/images/logo.png';"></div>
+      <div class="photo-caption"><strong>Así se ve la E.E.T.P. 612 por afuera</strong><span>Edificio de la institución en Coronda, Santa Fe.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="galeria" class="section">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">GALERÍA</div><h2>La escuela también se vive en imágenes.</h2><p>Una selección de fotografías publicadas por la propia E.E.T.P. 612 para mostrar actividades, proyectos y experiencias de sus estudiantes.</p></div>
+  <div class="photo-gallery">
+   <article class="gallery-card"><img src="https://www.eetp612.com.ar/imagenes/WhatsApp%20Image%202024-10-18%20at%2010.43.22%281%29.jpeg" alt="Estudiantes y docente de la E.E.T.P. 612 en Expo Tecno 2024" loading="lazy"><div class="gallery-info"><span class="tag">PROYECTOS</span><h3>Innovación y proyectos</h3><p>Integrantes del proyecto ASISBIOM durante su participación en Expo Tecno 2024.</p><a href="https://www.eetp612.com.ar/noticia.php?id=118" target="_blank" rel="noopener">Ver publicación oficial ↗</a></div></article>
+   <article class="gallery-card"><img src="https://www.eetp612.com.ar/imagenes/IMG-20240823-WA0060.jpg" alt="Estudiantes y profesores de la E.E.T.P. 612 durante una actividad grupal" loading="lazy"><div class="gallery-info"><span class="tag">COMUNIDAD</span><h3>Experiencias fuera del aula</h3><p>Una actividad grupal de estudiantes y profesores, mostrando también el lado social de la vida escolar.</p><a href="https://www.eetp612.com.ar/noticia.php?id=90" target="_blank" rel="noopener">Ver publicación oficial ↗</a></div></article>
+   <article class="gallery-card gallery-link"><div class="gallery-placeholder"><span>⚙️</span><strong>Más proyectos de la 612</strong><small>Expotécnica, prototipos, investigaciones y trabajos prácticos.</small></div><div class="gallery-info"><span class="tag">EXPOTÉCNICA</span><h3>Una muestra del trabajo técnico</h3><p>La Expotécnica reúne proyectos y producciones realizadas por estudiantes durante el año.</p><a href="https://www.eetp612.com.ar/expotecnica.php" target="_blank" rel="noopener">Ver galería oficial ↗</a></div></article>
+  </div>
+  <p class="source-note">Fotos y referencias: sitio oficial de la E.E.T.P. N.º 612.</p>
+ </div>
+</section>
+
+<section id="vida" style="background:var(--bg2)">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Vida estudiantil</div><h2>No todo pasa dentro del aula.</h2><p>La institución también cuenta con actividades, proyectos, participación estudiantil y una Expotécnica.</p></div>
+  <div class="grid3">
+   <div class="card"><div class="icon">🚀</div><h3>Expotécnica 612</h3><p>Evento anual donde estudiantes presentan proyectos, prototipos, investigaciones y trabajos prácticos ante la comunidad.</p></div>
+   <div class="card"><div class="icon">🗳️</div><h3>Centro de Estudiantes</h3><p>Espacio de representación y participación estudiantil con un estatuto institucional.</p></div>
+   <div class="card"><div class="icon">📰</div><h3>Noticias</h3><p>La institución publica novedades, exámenes, actividades, convocatorias y propuestas de la comunidad educativa.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="ingreso">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Ingresantes</div><h2>Todo lo básico para empezar.</h2><p>La información siguiente corresponde al proceso de inscripción a 1.º año publicado para 2026; las fechas pueden cambiar en futuros ciclos.</p></div>
+  <div class="grid2">
+   <div class="card">
+    <h3>📅 Inscripción 2026</h3>
+    <p>El período informado fue del <strong>13 al 17 de octubre de 2025</strong>, con atención de 08:00 a 11:00 y de 14:00 a 17:00.</p>
+    <div class="notice">Para próximos años, conviene confirmar fechas y requisitos directamente con la Secretaría.</div>
+   </div>
+   <div class="card">
+    <h3>📄 Documentación</h3>
+    <ul>
+     <li>Formulario de inscripción.</li><li>Fotocopia de partida de nacimiento.</li><li>Fotocopia de DNI del estudiante y padres/tutores.</li><li>Foto 4×4.</li><li>Constancia de regularidad de 7.º grado.</li>
+    </ul>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="recursos" class="section">
+ <div class="container">
+  <div class="section-head"><div><span class="eyebrow">RECURSOS</span><h2>Todo lo importante, a un toque.</h2></div><p>Accesos rápidos para quienes ya estudian en la 612, quienes quieren ingresar o simplemente quieren conocer más.</p></div>
+  <div class="resource-grid">
+   <a class="resource-card" href="https://www.eetp612.com.ar/" target="_blank" rel="noopener"><span>🌐</span><h3>Sitio oficial</h3><p>Noticias, información institucional y novedades.</p><b>Visitar ↗</b></a>
+   <a class="resource-card" href="https://www.eetp612.com.ar/ingreso.php" target="_blank" rel="noopener"><span>📝</span><h3>Ingresantes</h3><p>Documentación, requisitos y materiales para 1.º año.</p><b>Ver información ↗</b></a>
+   <a class="resource-card" href="https://www.eetp612.com.ar/alumno.php" target="_blank" rel="noopener"><span>💻</span><h3>Utilidades para alumnos</h3><p>Formularios, software y enlaces educativos.</p><b>Explorar ↗</b></a>
+   <a class="resource-card" href="https://www.eetp612.com.ar/expotecnica.php" target="_blank" rel="noopener"><span>⚙️</span><h3>Expotécnica</h3><p>Proyectos, prototipos e investigaciones de estudiantes.</p><b>Conocer ↗</b></a>
+   <a class="resource-card" href="https://www.eetp612.com.ar/centro.php" target="_blank" rel="noopener"><span>🤝</span><h3>Centro de estudiantes</h3><p>Participación, representación y actividades estudiantiles.</p><b>Ver más ↗</b></a>
+   <a class="resource-card" href="#contacto"><span>☎️</span><h3>Secretaría y contacto</h3><p>Dirección, teléfonos y correo de la institución.</p><b>Contactar →</b></a>
+  </div>
+ </div>
+</section>
+
+<section id="faq" style="background:var(--bg2)">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Preguntas frecuentes</div><h2>Lo que normalmente querés saber.</h2></div>
+  <div class="faq">
+   <button onclick="faq(this)">¿Cuáles son las dos tecnicaturas actuales? <span>+</span></button>
+   <p>La información institucional actual señala Técnico en Administración y Gestión y Técnico en Equipos e Instalaciones Electromecánicas.</p>
+  </div>
+  <div class="faq">
+   <button onclick="faq(this)">¿Taller es una tecnicatura? <span>+</span></button>
+   <p>No según la oferta oficial actual. “Taller” aparece como espacio curricular dentro de diferentes años y recorridos, especialmente en la formación técnica.</p>
+  </div>
+  <div class="faq">
+   <button onclick="faq(this)">¿Hay Economía y Contabilidad? <span>+</span></button>
+   <p>La escuela tiene contenidos y espacios relacionados con economía, administración y registración contable dentro de su propuesta histórica y curricular. La denominación oficial actual de la tecnicatura es Administración y Gestión.</p>
+  </div>
+  <div class="faq">
+   <button onclick="faq(this)">¿Dónde queda la escuela?</button>
+   <p>En Juan de Garay e Italia, Coronda, Santa Fe.</p>
+  </div>
+ </div>
+</section>
+
+<section id="contacto">
+ <div class="container">
+  <div class="section-head"><div class="eyebrow">Contacto oficial</div><h2>¿Querés confirmar algo?</h2><p>Para fechas, documentación, horarios o consultas particulares, la fuente indicada es la Secretaría de la institución.</p></div>
+  <div class="contact">
+   <div class="contact-card">
+    <div class="contact-row"><span>📍</span><div><b>Dirección</b><br>Juan de Garay e Italia · Coronda, Santa Fe</div></div>
+    <div class="contact-row"><span>☎️</span><div><b>Teléfono</b><br>0342 4910134</div></div>
+    <div class="contact-row"><span>💬</span><div><b>WhatsApp</b><br>0342 5923900</div></div>
+    <div class="contact-row"><span>✉️</span><div><b>Email</b><br>eetp.612coronda@gmail.com</div></div>
+   </div>
+   <div class="contact-card">
+    <h3>🌐 Sitio institucional</h3>
+    <p style="color:var(--muted);margin:10px 0 20px">Consultá noticias, ingreso, autoridades, propuesta pedagógica, recursos para alumnos y novedades.</p>
+    <a class="btn" href="https://eetp612.com.ar/" target="_blank" rel="noopener">Visitar E.E.T.P. 612 ↗</a>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+<button class="back-top" id="backTop" aria-label="Volver arriba">↑</button>
+
+<footer>
+ <div class="container">
+  <b>E.E.T.P. N°612 · Eudocio de los Santos Giménez</b>
+  <p style="margin-top:6px">Guía informativa independiente basada en información pública de la institución. Última revisión: septiembre de 2026.</p>
+ </div>
+</footer>
+
+<div class="modal" id="modal">
+ <div class="modal-box">
+  <button class="close" onclick="closeModal()">×</button>
+  <div id="modalContent"></div>
+ </div>
+</div>
+
+<script>
+const data={
+ electro:`<div class="eyebrow">Tecnicatura</div><h2>Equipos e Instalaciones Electromecánicas</h2>
+ <p style="color:var(--muted)">La formación prepara para intervenir en equipos e instalaciones mecánicas y electromecánicas, circuitos eléctricos, sistemas de control y automatismos, mantenimiento y proyectos.</p>
+ <div class="details"><h3>Áreas que aparecen en el recorrido</h3><div class="subjects">
+ <div class="subject">Electricidad</div><div class="subject">Mecánica</div><div class="subject">Electrónica</div><div class="subject">Automatización</div><div class="subject">CNC / CAD-CAM</div><div class="subject">Mantenimiento</div><div class="subject">Instalaciones eléctricas</div><div class="subject">Prácticas profesionalizantes</div></div></div>`,
+ admin:`<div class="eyebrow">Tecnicatura</div><h2>Gestión y Administración</h2>
+ <p style="color:var(--muted)">El perfil profesional publicado contempla organizar, programar, ejecutar y controlar operaciones comerciales, financieras y administrativas; gestionar información, recursos y proyectos organizacionales.</p>
+ <div class="details"><h3>Capacidades relacionadas</h3><div class="subjects">
+ <div class="subject">Administración</div><div class="subject">Contabilidad</div><div class="subject">Economía</div><div class="subject">Operaciones comerciales</div><div class="subject">Finanzas</div><div class="subject">Proyectos</div><div class="subject">Planificación</div><div class="subject">Atención al cliente</div></div></div>`
+};
+function openModal(type){document.getElementById('modalContent').innerHTML=data[type];document.getElementById('modal').classList.add('show')}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()})
+function faq(btn){const box=btn.parentElement;box.classList.toggle('open');btn.querySelector('span').textContent=box.classList.contains('open')?'−':'+'}
+function showTab(id,btn){document.querySelectorAll('.tabcontent').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));btn.classList.add('active')}
+</script>
+<script>const b3=document.getElementById('building'),v3=document.getElementById('school3d');let rx=5,ry=-25,z=.9,drag=false,lx=0,ly=0;function r3(){b3.style.transform=`rotateX(${rx}deg) rotateY(${ry}deg) scale(${z})`}function turn3d(a){ry+=a;r3()}function reset3d(){rx=5;ry=-25;z=.9;r3()}v3.addEventListener('pointerdown',e=>{drag=true;lx=e.clientX;ly=e.clientY;v3.setPointerCapture(e.pointerId);v3.style.cursor='grabbing'});v3.addEventListener('pointermove',e=>{if(!drag)return;ry+=(e.clientX-lx)*.45;rx-=(e.clientY-ly)*.22;rx=Math.max(-25,Math.min(35,rx));lx=e.clientX;ly=e.clientY;r3()});v3.addEventListener('pointerup',()=>{drag=false;v3.style.cursor='grab'});v3.addEventListener('pointercancel',()=>{drag=false;v3.style.cursor='grab'});v3.addEventListener('wheel',e=>{e.preventDefault();z+=e.deltaY<0?.06:-.06;z=Math.max(.55,Math.min(1.35,z));r3()},{passive:false});</script>
+<script>
+const progress=document.getElementById('scrollProgress'), backTop=document.getElementById('backTop');
+window.addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-window.innerHeight; progress.style.width=(h>0?(window.scrollY/h)*100:0)+'%'; backTop.classList.toggle('show',window.scrollY>600);},{passive:true});
+backTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+</script>
+</body>
+</html>
